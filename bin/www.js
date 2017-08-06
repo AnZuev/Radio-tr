@@ -27,7 +27,7 @@ router
     });
 
 
-
+let counter = 0;
 // apply all the middlewares
 app
     // logger
@@ -36,6 +36,10 @@ app
         await next();
         const ms = new Date - start;
         console.log(`${ctx.method} ${ctx.url} - ${ms} ms`);
+        counter++;
+        if(counter % 100 === 0){
+            console.log(`${counter} requests since last shutdown`)
+        }
     })
     // serve public files
     .use(serve('./public/'))
@@ -44,6 +48,6 @@ app
     .use(router.allowedMethods());
 
 //start server
-app.listen(3000);
+app.listen(config.server.port);
 
-console.log('listening on port 3000');
+console.log(`listening on port ${config.server.port}`);

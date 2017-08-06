@@ -1,0 +1,24 @@
+{
+  "name": "radio-for-nikita",
+  "description": "",
+  "main": "bin/www",
+  "authors": [
+    "AnZuev"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "radio"
+  ],
+  "homepage": "https://github.com/AnZuev/RadioForNikita",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fetch": "^2.0.3",
+    "jquery": "^3.2.1"
+  }
+}
