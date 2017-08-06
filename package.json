@@ -1,0 +1,22 @@
+{
+  "name": "radio-for-nikita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/www",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1",
+    "mz": "^2.6.0",
+    "nconf": "^0.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "radio"
+  ],
+  "author": "AnZuev",
+  "license": "ISC"
+}

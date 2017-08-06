@@ -1,0 +1,12 @@
+#wrapper{
+    margin-top:50px;
+    max-width: none;
+    min-width: 0;
+}
+#content{
+    max-width: none;
+    min-width: 0;
+}
+img{
+    max-width: 350px;
+}

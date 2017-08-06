@@ -1,0 +1,12 @@
+body{
+    font-size: 14pt;
+    text-align: center;
+}
+
+pre{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 20px;
+
+}

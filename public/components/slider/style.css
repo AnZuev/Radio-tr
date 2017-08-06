@@ -1,0 +1,31 @@
+.slider{
+    text-align: center;
+}
+.slider__scale{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 4px;
+    max-height: 4px;
+    background: #070707;
+    display: inline-block;
+}
+.slider__maxValue, .slider__minValue{
+    display: inline-block;
+    font-size: 20pt;
+    position: relative;
+    bottom: -20px;
+}
+
+.slider__roller{
+    background:#ECC595;
+    min-width: 12px;
+    max-width: 12px;
+    min-height: 36px;
+    max-height: 36px;
+    border: solid 1px black;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    margin-top: -16px;
+}

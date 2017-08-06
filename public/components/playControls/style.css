@@ -1,0 +1,17 @@
+.mainPage-playControls{
+    max-width: 208px;
+    min-width: 208px;
+    margin: 0 auto;
+    margin-top: -80px;
+}
+.mainPage-playControls div{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mainPage-playControls-play__clicked img {
+    box-shadow: 0 2px 50px 10px rgba(223, 133, 45, 0.5);
+    border-radius:100px;
+}
+
+

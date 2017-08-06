@@ -1,0 +1,56 @@
+.mainPage-tram{
+    text-align: center;
+}
+.mainPage-tram img{
+    max-width: 700px;
+}
+
+.mainPage-audioVisualizer{
+    min-height: 150px;
+    background: grey;
+}
+
+
+
+
+
+.mainPage-marquee{
+    max-width: 514px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: solid #F37C06 1px;
+    padding: 7px 2px 2px 2px;
+    vertical-align: middle;
+    font-size: 20pt;
+}
+
+#footer{
+    font-size: 20pt;
+    color: black;
+    text-align: center;
+    display: block;
+    margin-top: -38px;
+}
+#footer ul{
+    list-style: none;
+    display: inline-block;
+}
+#footer ul li{
+    float: left;
+    display: inline-block;
+    margin: 0 36px 0 36px;
+    cursor: pointer;
+
+}
+#footer ul li a{
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.mainPage__innerPlayer{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+

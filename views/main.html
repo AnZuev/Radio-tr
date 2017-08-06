@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio</title>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/fetch/fetch.js"></script>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/components/slider/index.js"></script>
+    <link rel="stylesheet" href="/components/slider/style.css"/>
+    <script src="/components/playControls/index.js"></script>
+    <link rel="stylesheet" href="/components/playControls/style.css"/>
+    <script src="/components/marquee/index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <div class="mainPage-tram">
+                <img src="/imgs/mainPageBackground.png" alt=""/>
+            </div>
+            <div class="mainPage-playControls"></div>
+            <div class="mainPage-volumeControl"></div>
+            <div class="mainPage-marquee"></div>
+        </div>
+        <div class="mainPage__innerPlayer">
+            <audio id="mainPage__audioStream" controls="" preload="none">
+                <source src="http://radiofornikita.cloudapp.net:8000/?type=http&amp;nocache=3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="/about" target="_blank">О нас</a></li>
+            <li><a href="/contacts" target="_blank">Контакты</a></li>
+            <li><a href="/donation" target="_blank">Donation</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

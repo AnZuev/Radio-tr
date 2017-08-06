@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    min-height: 100%;
+    height: 100%;
+}
+ul, div, menu{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+#wrapper{
+    min-width: 960px;
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+#content{
+    min-width: 960px;
+    max-width: 960px;
+    min-height: 100% !important
+}
+
+.clearfix{
+    clear: both;
+}
