@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/AnZuev/RadioForNikita",
+  "authors": [
+    "Anton Zuev <anzuev@bk.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fetch": "^2.0.3",
+    "jquery": "^3.2.1"
+  }
+}
