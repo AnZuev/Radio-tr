@@ -21,13 +21,12 @@ function Marquee({}){
     };
 
     function updateSongTitle() {
-        fetch('/audiostream/currentsong?sid=1')
+        return fetch('http://radio-tr.ru/audiostream/currentsong?sid=1')
             .then(function(response) {
                 return response.text();
             })
-            .then((text) => {
+            .then((title) => {
                 let regex = /<pre>(.*)<\/pre>/;
-                let title = text.match(regex);
                 console.log(title);
                 internal.title = title;
             })
@@ -39,10 +38,13 @@ function Marquee({}){
     this.startUpdates = function () {
         let updateFunction = function () {
             let currentTitle = internal.title;
-            updateSongTitle();
-            if(internal.title !== currentTitle){
-                internal.marquee.innerHTML = internal.placeholder + internal.title;
-            }
+            updateSongTitle()
+                .then(()=>{
+                    if(internal.title !== currentTitle){
+                        internal.elem.innerHTML = internal.placeholder + internal.title;
+                    }
+                })
+
         };
 
         internal.interval = setInterval(updateFunction, 10000)
