@@ -8,7 +8,8 @@ function PlayControls(options) {
         playButton: null,
         pauseButton: null,
         isPlaying: false,
-        audioStream: options.audioStream
+        audioStream: options.audioStream,
+        marquee: options.marquee
     };
 
     this.getPlayButton = function () {
@@ -54,6 +55,7 @@ function PlayControls(options) {
                 internal.playButton.classList = "mainPage-playControls-play__clicked";
                 internal.isPlaying = true;
                 internal.audioStream.play();
+                internal.marquee.startUpdates();
             }
         });
 
@@ -73,6 +75,7 @@ function PlayControls(options) {
                 internal.playButton.classList = "mainPage-playControls-play";
                 internal.isPlaying = false;
                 internal.audioStream.pause();
+                internal.marquee.stopUpdates();
             }
         });
 
